@@ -1958,6 +1958,71 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@clerk/backend@npm:^0.12.0":
+  version: 0.12.0
+  resolution: "@clerk/backend@npm:0.12.0"
+  dependencies:
+    "@clerk/types": ^3.29.0
+    "@peculiar/webcrypto": 1.4.1
+    "@types/node": 16.18.6
+    deepmerge: 4.2.2
+    node-fetch-native: 1.0.1
+    rfc4648: 1.5.2
+    snakecase-keys: 5.4.4
+    tslib: 2.4.1
+  checksum: 445eb0fdec87392503a9d75db8bb73362f0d1353165aec48626e29776caed289998a7a506c70f21d8668aefdc86484a630f93740195764dddbe095cc8a987321
+  languageName: node
+  linkType: hard
+
+"@clerk/clerk-react@npm:^4":
+  version: 4.12.8
+  resolution: "@clerk/clerk-react@npm:4.12.8"
+  dependencies:
+    "@clerk/shared": ^0.13.5
+    "@clerk/types": ^3.31.1
+    swr: 1.3.0
+    tslib: 2.4.1
+  peerDependencies:
+    react: ">=16"
+  checksum: c7e8477c90c445c9399e35010f7ea1ce55b904be9f7e25b9943b58a4c71194f7d2521b902688dd3db7ccb3b0f41fe23000e502364aa4106ad19e5bb065a22b13
+  languageName: node
+  linkType: hard
+
+"@clerk/clerk-sdk-node@npm:4.7.9":
+  version: 4.7.9
+  resolution: "@clerk/clerk-sdk-node@npm:4.7.9"
+  dependencies:
+    "@clerk/backend": ^0.12.0
+    "@clerk/types": ^3.29.0
+    "@types/cookies": 0.7.7
+    "@types/express": 4.17.14
+    "@types/node-fetch": 2.6.2
+    camelcase-keys: 6.2.2
+    cookie: 0.5.0
+    snakecase-keys: 3.2.1
+    tslib: 2.4.1
+  checksum: f052ced2f9c88ac5edd2e1a0333c48a96c5e3b299333c9d1f21da071081700906471666104261db7f4954bb08cd25d66c75ad71a5a530bf40e6b11267bdd01e2
+  languageName: node
+  linkType: hard
+
+"@clerk/shared@npm:^0.13.5":
+  version: 0.13.5
+  resolution: "@clerk/shared@npm:0.13.5"
+  peerDependencies:
+    react: ">=16"
+  checksum: f10211c6e584b6c60867b8f70382eab0fe861a045de4c7edfe96e4cfd92850dd7adac55ffffa81e05fefcf47c8232e6958e7b347c3dc54d189310cb0f0cf2293
+  languageName: node
+  linkType: hard
+
+"@clerk/types@npm:^3.29.0, @clerk/types@npm:^3.31.1":
+  version: 3.31.1
+  resolution: "@clerk/types@npm:3.31.1"
+  dependencies:
+    csstype: 3.1.1
+  checksum: 10ef9c2b047696cc8995d2d60b19bfa2296663554551e35d733d3faff5a04bd36c0659b9383861857527a8d4361c90fb5e90c9aac693eb9452c76984e602d958
+  languageName: node
+  linkType: hard
+
 "@cnakazawa/watch@npm:^1.0.3":
   version: 1.0.4
   resolution: "@cnakazawa/watch@npm:1.0.4"
@@ -3921,7 +3986,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@peculiar/webcrypto@npm:^1.4.0":
+"@peculiar/webcrypto@npm:1.4.1, @peculiar/webcrypto@npm:^1.4.0":
   version: 1.4.1
   resolution: "@peculiar/webcrypto@npm:1.4.1"
   dependencies:
@@ -4306,6 +4371,41 @@ __metadata:
     rwfw: dist/bins/rwfw.js
     tsc: dist/bins/tsc.js
   checksum: bccb1278716ca1a12c967c3b9085b943722e4f3cce6942ad9f90b1ddf45f655aa0755efadf3247872dff945a27ae942356fc30f78ace5a8391e9a2eea6fc7a9d
+  languageName: node
+  linkType: hard
+
+"@redwoodjs/auth-clerk-api@npm:4.3.1":
+  version: 4.3.1
+  resolution: "@redwoodjs/auth-clerk-api@npm:4.3.1"
+  dependencies:
+    "@babel/runtime-corejs3": 7.21.0
+    "@clerk/clerk-sdk-node": 4.7.9
+    core-js: 3.29.0
+  checksum: a8db7f53c71c07d21ecf3c5dd9d8756f8ec38a8aafceed18e2f84d0be9850282e365fb3130245e14f37b5d223d3a08fe1f3e4212993739a5ce04785b9f367e68
+  languageName: node
+  linkType: hard
+
+"@redwoodjs/auth-clerk-setup@npm:4.3.1":
+  version: 4.3.1
+  resolution: "@redwoodjs/auth-clerk-setup@npm:4.3.1"
+  dependencies:
+    "@babel/runtime-corejs3": 7.21.0
+    "@redwoodjs/cli-helpers": 4.3.1
+    core-js: 3.29.0
+  checksum: e4b24021d6e0d55a035f32e2be454beea286c739d1731ed5df024627d456bc6d08e93538496981a07f7c30495dc885464e2f3377d389997f2a0b875c31b56896
+  languageName: node
+  linkType: hard
+
+"@redwoodjs/auth-clerk-web@npm:4.3.1":
+  version: 4.3.1
+  resolution: "@redwoodjs/auth-clerk-web@npm:4.3.1"
+  dependencies:
+    "@babel/runtime-corejs3": 7.21.0
+    "@redwoodjs/auth": 4.3.1
+    core-js: 3.29.0
+  peerDependencies:
+    "@clerk/clerk-react": 4.12.2
+  checksum: 737f8db8545745ec710e102ed6ab20d826486312ef786b3d6c4f00ec364251f5bc8c26a9b292b740e6525185569fb4ee553266147e52b0746c0ac4f4d23b39d2
   languageName: node
   linkType: hard
 
@@ -6288,6 +6388,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/cookies@npm:0.7.7":
+  version: 0.7.7
+  resolution: "@types/cookies@npm:0.7.7"
+  dependencies:
+    "@types/connect": "*"
+    "@types/express": "*"
+    "@types/keygrip": "*"
+    "@types/node": "*"
+  checksum: 259883abcd884da8ca9c58b91c402aa04e78ea7a0fa6772d4951c44e0868a3722a6fff54c0ac796002affc0e5b18f374213b2d4904b4e5c7f0d78a7368c14242
+  languageName: node
+  linkType: hard
+
 "@types/cross-spawn@npm:6.0.2":
   version: 6.0.2
   resolution: "@types/cross-spawn@npm:6.0.2"
@@ -6340,7 +6452,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/express-serve-static-core@npm:*, @types/express-serve-static-core@npm:^4.17.33":
+"@types/express-serve-static-core@npm:*, @types/express-serve-static-core@npm:^4.17.18, @types/express-serve-static-core@npm:^4.17.33":
   version: 4.17.33
   resolution: "@types/express-serve-static-core@npm:4.17.33"
   dependencies:
@@ -6360,6 +6472,18 @@ __metadata:
     "@types/qs": "*"
     "@types/serve-static": "*"
   checksum: 5802a0a28f7473744dd6a118479440d8c5c801c973d34fb6f31b5ee645a41fee936193978a8e905d55deefda9b675d19924167bf11a31339874c3161a3fc2922
+  languageName: node
+  linkType: hard
+
+"@types/express@npm:4.17.14":
+  version: 4.17.14
+  resolution: "@types/express@npm:4.17.14"
+  dependencies:
+    "@types/body-parser": "*"
+    "@types/express-serve-static-core": ^4.17.18
+    "@types/qs": "*"
+    "@types/serve-static": "*"
+  checksum: 616e3618dfcbafe387bf2213e1e40f77f101685f3e9efff47c66fd2da611b7578ed5f4e61e1cdb1f2a32c8f01eff4ee74f93c52ad56d45e69b7154da66b3443a
   languageName: node
   linkType: hard
 
@@ -6521,6 +6645,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/keygrip@npm:*":
+  version: 1.0.2
+  resolution: "@types/keygrip@npm:1.0.2"
+  checksum: 95c9cc9824754baecb73c42051477c9f9dfb1a4dcaf6f51d025398e379b146adc0da2c476ed0129fe4ea157413910e5e2acb10c6dad308ef5ea8a95080229fd5
+  languageName: node
+  linkType: hard
+
 "@types/keyv@npm:^3.1.1":
   version: 3.1.4
   resolution: "@types/keyv@npm:3.1.4"
@@ -6588,7 +6719,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node-fetch@npm:^2.5.7":
+"@types/node-fetch@npm:2.6.2, @types/node-fetch@npm:^2.5.7":
   version: 2.6.2
   resolution: "@types/node-fetch@npm:2.6.2"
   dependencies:
@@ -6609,6 +6740,13 @@ __metadata:
   version: 16.18.14
   resolution: "@types/node@npm:16.18.14"
   checksum: af0229e73c08e77a9d9281c15e2fb5ea8061a2390287659d7c1abf9602792ea3e923c919430606438085823704f68afa99ca292ed0c99352a4296c3d6b12c711
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:16.18.6":
+  version: 16.18.6
+  resolution: "@types/node@npm:16.18.6"
+  checksum: 88192f5cd3d21ca827898c903ce6fbb8a92a51d0f9d8f7e93ac3f2f3b46cdd9f29c969fe3af9ba004833bb265c6330042f37d11cd97b9e4f54dabf2b34399075
   languageName: node
   linkType: hard
 
@@ -7901,6 +8039,7 @@ __metadata:
   resolution: "api@workspace:api"
   dependencies:
     "@redwoodjs/api": 4.3.1
+    "@redwoodjs/auth-clerk-api": 4.3.1
     "@redwoodjs/graphql-server": 4.3.1
   languageName: unknown
   linkType: soft
@@ -9459,6 +9598,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"camelcase-keys@npm:6.2.2":
+  version: 6.2.2
+  resolution: "camelcase-keys@npm:6.2.2"
+  dependencies:
+    camelcase: ^5.3.1
+    map-obj: ^4.0.0
+    quick-lru: ^4.0.1
+  checksum: bf1a28348c0f285c6c6f68fb98a9d088d3c0269fed0cdff3ea680d5a42df8a067b4de374e7a33e619eb9d5266a448fe66c2dd1f8e0c9209ebc348632882a3526
+  languageName: node
+  linkType: hard
+
 "camelcase-keys@npm:^2.0.0":
   version: 2.1.0
   resolution: "camelcase-keys@npm:2.1.0"
@@ -10908,7 +11058,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"csstype@npm:^3.0.2":
+"csstype@npm:3.1.1, csstype@npm:^3.0.2":
   version: 3.1.1
   resolution: "csstype@npm:3.1.1"
   checksum: 7c8b8c5923049d84132581c13bae6e1faf999746fe3998ba5f3819a8e1cdc7512ace87b7d0a4a69f0f4b8ba11daf835d4f1390af23e09fc4f0baad52c084753a
@@ -11096,6 +11246,13 @@ __metadata:
   version: 0.1.4
   resolution: "deep-is@npm:0.1.4"
   checksum: 7f0ee496e0dff14a573dc6127f14c95061b448b87b995fc96c017ce0a1e66af1675e73f1d6064407975bc4ea6ab679497a29fff7b5b9c4e99cb10797c1ad0b4c
+  languageName: node
+  linkType: hard
+
+"deepmerge@npm:4.2.2":
+  version: 4.2.2
+  resolution: "deepmerge@npm:4.2.2"
+  checksum: d6136eee869057fea7a829aa2d10073ed49db5216e42a77cc737dd385334aab9b68dae22020a00c24c073d5f79cbbdd3f11b8d4fc87700d112ddaa0e1f968ef2
   languageName: node
   linkType: hard
 
@@ -17044,6 +17201,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"map-obj@npm:^4.0.0, map-obj@npm:^4.1.0":
+  version: 4.3.0
+  resolution: "map-obj@npm:4.3.0"
+  checksum: 1c19e1c88513c8abdab25c316367154c6a0a6a0f77e3e8c391bb7c0e093aefed293f539d026dc013d86219e5e4c25f23b0003ea588be2101ccd757bacc12d43b
+  languageName: node
+  linkType: hard
+
 "map-or-similar@npm:^1.5.0":
   version: 1.5.0
   resolution: "map-or-similar@npm:1.5.0"
@@ -17810,6 +17974,13 @@ __metadata:
     object.getownpropertydescriptors: ^2.0.3
     semver: ^5.7.0
   checksum: 8be86f294f8b065a1e126e9ceb7a4b38b75eb7ec6391060e6e093ab9649e5c1fa977f2a5fe799b6ada862d65ce8259d1b7eabf2057774d641306e467d58cb96b
+  languageName: node
+  linkType: hard
+
+"node-fetch-native@npm:1.0.1":
+  version: 1.0.1
+  resolution: "node-fetch-native@npm:1.0.1"
+  checksum: 27841116388ea5309037400de7fa1003712e974dc57a048f78e5fc659fa80095403f34051c069096a9bd705c7445876d88624121365847f617520325693d67c8
   languageName: node
   linkType: hard
 
@@ -19952,6 +20123,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"quick-lru@npm:^4.0.1":
+  version: 4.0.1
+  resolution: "quick-lru@npm:4.0.1"
+  checksum: f9b1596fa7595a35c2f9d913ac312fede13d37dc8a747a51557ab36e11ce113bbe88ef4c0154968845559a7709cb6a7e7cbe75f7972182451cd45e7f057a334d
+  languageName: node
+  linkType: hard
+
 "ramda@npm:^0.28.0":
   version: 0.28.0
   resolution: "ramda@npm:0.28.0"
@@ -20831,6 +21009,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"rfc4648@npm:1.5.2":
+  version: 1.5.2
+  resolution: "rfc4648@npm:1.5.2"
+  checksum: 53ef37172324df83db204802ea08bdcb99d24d311543bfe50edef5bca16d8a4f64fd82cc1dfc975847737d774178f488c8d5dd2aa280385cc785374eb5cf04cc
+  languageName: node
+  linkType: hard
+
 "rfdc@npm:^1.2.0, rfdc@npm:^1.3.0":
   version: 1.3.0
   resolution: "rfdc@npm:1.3.0"
@@ -20874,6 +21059,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
+    "@redwoodjs/auth-clerk-setup": 4.3.1
     "@redwoodjs/core": 4.3.1
   languageName: unknown
   linkType: soft
@@ -21504,6 +21690,27 @@ __metadata:
     dot-case: ^3.0.4
     tslib: ^2.0.3
   checksum: ab19a913969f58f4474fe9f6e8a026c8a2142a01f40b52b79368068343177f818cdfef0b0c6b9558f298782441d5ca8ed5932eb57822439fad791d866e62cecd
+  languageName: node
+  linkType: hard
+
+"snakecase-keys@npm:3.2.1":
+  version: 3.2.1
+  resolution: "snakecase-keys@npm:3.2.1"
+  dependencies:
+    map-obj: ^4.1.0
+    to-snake-case: ^1.0.0
+  checksum: ead9fda98fe2ff2ec03b2169867a695c4c8cd2d624025fcaa24df68733c92a6de0a1e070e2b6b490b41ced7f2e0ad47256245c6f05e045acba7e76061731198c
+  languageName: node
+  linkType: hard
+
+"snakecase-keys@npm:5.4.4":
+  version: 5.4.4
+  resolution: "snakecase-keys@npm:5.4.4"
+  dependencies:
+    map-obj: ^4.1.0
+    snake-case: ^3.0.4
+    type-fest: ^2.5.2
+  checksum: 72afc51818d9f8cee00b4ccdc3b83bb26e48de21c4ef77d28d0d70b431bec17e48aa3e64c2c418fd9f2b70ac0a8afce24b4e615238877c4ee451b5212b983fb0
   languageName: node
   linkType: hard
 
@@ -22274,6 +22481,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"swr@npm:1.3.0":
+  version: 1.3.0
+  resolution: "swr@npm:1.3.0"
+  peerDependencies:
+    react: ^16.11.0 || ^17.0.0 || ^18.0.0
+  checksum: a02b3dd621e5117320ad45788fb407f60301985edb5fa4197f1b95e28cbe8b3bd093e3cb9a6002102f8c12b40a85941ee525f2b47273366870435aecd61d0e7b
+  languageName: node
+  linkType: hard
+
 "symbol-observable@npm:^4.0.0":
   version: 4.0.0
   resolution: "symbol-observable@npm:4.0.0"
@@ -22633,6 +22849,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"to-no-case@npm:^1.0.0":
+  version: 1.0.2
+  resolution: "to-no-case@npm:1.0.2"
+  checksum: c035b04e1042ed67ceb23dc5c7c20ccde11a83ab1d2b3947c17918472b5d26dd4ffdb4cf9464752e7707ab9f3af4a106f9b61244c724bc6810422acd5984da3d
+  languageName: node
+  linkType: hard
+
 "to-object-path@npm:^0.3.0":
   version: 0.3.0
   resolution: "to-object-path@npm:0.3.0"
@@ -22677,6 +22900,24 @@ __metadata:
     regex-not: ^1.0.2
     safe-regex: ^1.1.0
   checksum: 99d0b8ef397b3f7abed4bac757b0f0bb9f52bfd39167eb7105b144becfaa9a03756892352d01ac6a911f0c1ceef9f81db68c46899521a3eed054082042796120
+  languageName: node
+  linkType: hard
+
+"to-snake-case@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "to-snake-case@npm:1.0.0"
+  dependencies:
+    to-space-case: ^1.0.0
+  checksum: 46abf18ca90441c7dd6138e1db3169f66ab1311b36930a2daa96289c3ad49e568de7de8b1ddea971c4fbb4a3a7cde1d08aefa0fe41d5e917e6d69eaf1075faba
+  languageName: node
+  linkType: hard
+
+"to-space-case@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "to-space-case@npm:1.0.0"
+  dependencies:
+    to-no-case: ^1.0.0
+  checksum: b99e1b5d0f3c90a8d47fa3b155d515027bd83a370740e82ee7cb064f86e3655f030f068bddcb8d18239e7408761b4376d89ab91e5ccdb17dc859d8fd4f570ac5
   languageName: node
   linkType: hard
 
@@ -22884,6 +23125,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"tslib@npm:2.4.1, tslib@npm:~2.4.0":
+  version: 2.4.1
+  resolution: "tslib@npm:2.4.1"
+  checksum: 9ac0e4fd1033861f0b4f0d848dc3009ebcc3aa4757a06e8602a2d8a7aed252810e3540e54e70709f06c0f95311faa8584f769bcbede48aff785eb7e4d399b9ec
+  languageName: node
+  linkType: hard
+
 "tslib@npm:^1.8.1, tslib@npm:^1.9.2":
   version: 1.14.1
   resolution: "tslib@npm:1.14.1"
@@ -22895,13 +23143,6 @@ __metadata:
   version: 2.5.0
   resolution: "tslib@npm:2.5.0"
   checksum: e32fc99cc730dd514e53c44e668d76016e738f0bcc726aad5dbd2d335cf19b87a95a9b1e4f0a9993e370f1d702b5e471cdd4acabcac428a3099d496b9af2021e
-  languageName: node
-  linkType: hard
-
-"tslib@npm:~2.4.0":
-  version: 2.4.1
-  resolution: "tslib@npm:2.4.1"
-  checksum: 9ac0e4fd1033861f0b4f0d848dc3009ebcc3aa4757a06e8602a2d8a7aed252810e3540e54e70709f06c0f95311faa8584f769bcbede48aff785eb7e4d399b9ec
   languageName: node
   linkType: hard
 
@@ -22983,7 +23224,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"type-fest@npm:^2.19.0":
+"type-fest@npm:^2.19.0, type-fest@npm:^2.5.2":
   version: 2.19.0
   resolution: "type-fest@npm:2.19.0"
   checksum: a5a7ecf2e654251613218c215c7493574594951c08e52ab9881c9df6a6da0aeca7528c213c622bc374b4e0cb5c443aa3ab758da4e3c959783ce884c3194e12cb
@@ -23826,6 +24067,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "web@workspace:web"
   dependencies:
+    "@clerk/clerk-react": ^4
+    "@redwoodjs/auth-clerk-web": 4.3.1
     "@redwoodjs/forms": 4.3.1
     "@redwoodjs/router": 4.3.1
     "@redwoodjs/web": 4.3.1
