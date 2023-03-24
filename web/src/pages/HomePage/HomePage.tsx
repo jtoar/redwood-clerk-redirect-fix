@@ -4,13 +4,14 @@ import { MetaTags } from '@redwoodjs/web'
 import { useAuth } from 'src/auth'
 
 const HomePage = () => {
-  const { logOut } = useAuth()
+  const { logOut, currentUser } = useAuth()
 
   return (
     <>
       <MetaTags title="Home" description="Home page" />
 
       <h1>HomePage</h1>
+      <div>Hello, {currentUser?.username || 'STRANGER'}</div>
       <p>
         Find me in <code>./web/src/pages/HomePage/HomePage.tsx</code>
       </p>
