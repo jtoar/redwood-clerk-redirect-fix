@@ -24,6 +24,17 @@ const ClerkStatusUpdater = () => {
   return null
 }
 
+const ExtraWrapper = ({ children, clerkOptions}) => {
+  const { reauthenticate } = useAuth()
+
+  return (
+    <ClerkProvider {...clerkOptions} navigate={(to) => reauthenticate().then(() => navigate(to))}>
+      {children}
+      <ClerkStatusUpdater />
+    </ClerkProvider>
+  )
+}
+
 export const AuthProvider = ({ children }: Props) => {
   const publishableKey = process.env.CLERK_PUBLISHABLE_KEY
   const frontendApi =
@@ -38,11 +49,8 @@ export const AuthProvider = ({ children }: Props) => {
     : { frontendApi }
 
   return (
-    <ClerkProvider {...clerkOptions} navigate={(to) => navigate(to)}>
-      <ClerkRwAuthProvider>
-        {children}
-        <ClerkStatusUpdater />
-      </ClerkRwAuthProvider>
-    </ClerkProvider>
+    <ClerkRwAuthProvider>
+      <ExtraWrapper clerkOptions={clerkOptions}>{children}</ExtraWrapper>
+    </ClerkRwAuthProvider>
   )
 }
