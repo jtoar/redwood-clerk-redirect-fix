@@ -24,11 +24,14 @@ const ClerkStatusUpdater = () => {
   return null
 }
 
-const ExtraWrapper = ({ children, clerkOptions}) => {
+const ExtraWrapper = ({ children, clerkOptions }) => {
   const { reauthenticate } = useAuth()
 
   return (
-    <ClerkProvider {...clerkOptions} navigate={(to) => reauthenticate().then(() => navigate(to))}>
+    <ClerkProvider
+      {...clerkOptions}
+      navigate={(to) => reauthenticate().then(() => navigate(to))}
+    >
       {children}
       <ClerkStatusUpdater />
     </ClerkProvider>
