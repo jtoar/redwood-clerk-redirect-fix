@@ -7,8 +7,28 @@
     ]
   },
   "devDependencies": {
-    "@redwoodjs/auth-clerk-setup": "4.3.1",
-    "@redwoodjs/core": "4.3.1"
+    "@redwoodjs/core": "5.0.0-canary.559",
+    "@redwoodjs/api-server": "5.0.0-canary.599",
+    "@redwoodjs/auth-clerk-setup": "5.0.0-canary.599",
+    "@redwoodjs/cli-helpers": "5.0.0-canary.599",
+    "@redwoodjs/eslint-config": "5.0.0-canary.599",
+    "@redwoodjs/internal": "5.0.0-canary.599",
+    "@redwoodjs/prerender": "5.0.0-canary.599",
+    "@redwoodjs/project-config": "5.0.0-canary.599",
+    "@redwoodjs/structure": "5.0.0-canary.599",
+    "@redwoodjs/telemetry": "5.0.0-canary.599",
+    "@redwoodjs/testing": "5.0.0-canary.599"
+  },
+  "resolutions": {
+    "@redwoodjs/eslint-config": "5.0.0-canary.599",
+    "@redwoodjs/internal": "5.0.0-canary.599",
+    "@redwoodjs/project-config": "5.0.0-canary.599",
+    "@redwoodjs/testing": "5.0.0-canary.599",
+    "@redwoodjs/api-server": "5.0.0-canary.599",
+    "@redwoodjs/cli-helpers": "5.0.0-canary.599",
+    "@redwoodjs/prerender": "5.0.0-canary.599",
+    "@redwoodjs/structure": "5.0.0-canary.599",
+    "@redwoodjs/telemetry": "5.0.0-canary.599"
   },
   "eslintConfig": {
     "extends": "@redwoodjs/eslint-config",
